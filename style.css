@@ -25,6 +25,8 @@ body {
   background-color: #ffffff;
   color: var(--text-color);
   min-height: 100vh;
+  margin: 50px;
+  border-radius: 8px;
 }
 
 /* Main header styles */
@@ -40,6 +42,7 @@ body {
   background: var(--main-gradient);
   box-shadow: 0 4px 6px var(--main-shadow-color);
   color: var(--text-color);
+  flex: auto;
 }
 
 #main-header h1 {
@@ -49,9 +52,10 @@ body {
   text-transform: uppercase;
   padding: 12px;
   text-align: left;
-  padding-right: 350px;
+  padding-right: 250px;
   text-shadow: var(--text-shadow);
   letter-spacing: 1px;
+  flex: 1;
 }
 
 #main-header nav {
@@ -95,6 +99,14 @@ body {
   margin: 0 16px 12px 0;
 }
 
+#about-me-description {
+  float: none;
+  margin-top: 0;
+  background: var(--main-gradient);
+  padding: 16px 24px;
+  border-radius: 8px;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -120,6 +132,11 @@ img {
 
 #hobbies .hobbies-description {
   margin-top: 0;
+  background: var(--main-gradient);
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border: 3px solid #72a7d8;
 }
 
 #hobbies .hobbies-list {
@@ -161,6 +178,13 @@ img {
   font-size: 28px;
   color: var(--color-primary);
   text-shadow: var(--text-shadow);
+}
+
+#goals-paragraph {
+  background: var(--main-gradient);
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 3px solid #72a7d8;
 }
 
 /* Skills section styles */
@@ -223,6 +247,8 @@ img {
   text-align: center;
   padding-inline-start: 10px;
   padding-inline-end: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  width: 75%;
 }
 
 #contact-info {
@@ -246,6 +272,15 @@ img {
 
 #contact-info a:hover {
   color: var(--link-hover-color);
+}
+
+#contact-address {
+  background: var(--main-gradient);
+  padding: 16px 24px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #72a7d8;
+  color: var(--text-color);
+  border-radius: 8px;
 }
 
 footer h5 {
