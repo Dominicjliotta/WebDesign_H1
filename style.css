@@ -1,0 +1,267 @@
+:root {
+  --link-color: #0e0d0d;
+  --link-hover-color: #72a7d8;
+  --main-bg-color: #9e9898;
+  --main-text-color: #f0ecec;
+  --main-border-color: #72a7d8;
+  --main-shadow-color: rgba(0, 0, 0, 0.2);
+  --highlight-color: #4078ac;
+  --text-shadow-color: rgba(0, 0, 0, 0.1);
+  --main-gradient: radial-gradient(
+    circle,
+    var(--main-bg-color),
+    rgba(86, 109, 150, 0.1)
+  );
+  --color-primary: #72a7d8;
+  --text-color: #242222;
+  --text-shadow: 1px 1px 2px var(--text-shadow-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+/* Main header styles */
+#main-header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #9e9898;
+  padding: 5px;
+  font-family: Arial, sans-serif;
+  color: #f0ecec;
+  border: 2px solid #72a7d8;
+  background: var(--main-gradient);
+  box-shadow: 0 4px 6px var(--main-shadow-color);
+  color: var(--text-color);
+}
+
+#main-header h1 {
+  margin: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: left;
+  padding-right: 350px;
+  text-shadow: var(--text-shadow);
+  letter-spacing: 1px;
+}
+
+#main-header nav {
+  display: flex;
+  gap: 15px;
+  margin-top: 18px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  padding-right: 25px;
+}
+#main-header nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+#main-header nav a,
+#contact-info a {
+  transition: color 0.2s ease;
+}
+
+#main-header nav a:hover {
+  color: var(--color-primary);
+}
+
+/* About section styles */
+#about {
+  display: flow-root;
+  margin: 0 auto;
+}
+
+#about h2 {
+  margin-bottom: 12px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 28px;
+  color: var(--color-primary);
+}
+
+#about img {
+  float: left;
+  margin: 0 16px 12px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hobbies section styles */
+#hobbies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+  margin: 0 auto;
+}
+
+#hobbies h2 {
+  grid-column: 1 / -1;
+  margin-bottom: 12px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 28px;
+  color: var(--color-primary);
+  text-shadow: var(--text-shadow);
+}
+
+#hobbies .hobbies-description {
+  margin-top: 0;
+}
+
+#hobbies .hobbies-list {
+  background: var(--main-gradient);
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-color: #72a7d8;
+  border-style: solid;
+  background: var(--main-gradient);
+}
+
+#hobbies .hobbies-list ul {
+  list-style-type: square;
+}
+
+#hobbies .hobbies-list ul a {
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+#hobbies .hobbies-list ul a:hover {
+  color: #ffffff;
+}
+
+/* Goals section styles */
+
+#goals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#goals h2 {
+  margin-bottom: 12px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 28px;
+  color: var(--color-primary);
+  text-shadow: var(--text-shadow);
+}
+
+/* Skills section styles */
+
+#skills h2 {
+  margin-bottom: 12px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 28px;
+  color: var(--color-primary);
+  text-shadow: var(--text-shadow);
+}
+
+#skills {
+  margin: 0 auto;
+}
+
+#skills-container h3 {
+  text-shadow: var(--text-shadow);
+}
+
+#skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  background-color: #9e9898;
+  color: #f0ecec;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  border-color: #72a7d8;
+  border-style: solid;
+  background: var(--main-gradient);
+  color: var(--text-color);
+}
+
+#skills-description {
+  grid-column: 1 / -1;
+  color: var(--text-color);
+}
+
+/* Contact section styles */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  margin-bottom: 12px;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 28px;
+  color: var(--color-primary);
+  text-shadow: var(--text-shadow);
+}
+
+#contact address {
+  text-align: center;
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+}
+
+#contact-info {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 12px;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-basis: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#contact-info a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+#contact-info a:hover {
+  color: var(--link-hover-color);
+}
+
+footer h5 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 20px;
+  color: var(--color-primary);
+  text-shadow: var(--text-shadow);
+}
+
+footer nav {
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  text-align: left;
+  text-shadow: var(--text-shadow);
+  color: var(--color-primary);
+}

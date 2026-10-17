@@ -1,35 +1,48 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>About Me</title>
-    <link rel="icon" type="image/png" href="south_park_PNG11.png">
+    <link rel="icon" type="image/png" href="south_park_PNG11.png" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="main-header">
       <h1>Dominic Liotta</h1>
+      <nav>
+        <p><a href="#about">About Me</a></p>
+        <p><a href="#hobbies">Hobbies</a></p>
+        <p><a href="#goals">Goals</a></p>
+        <p><a href="#skills">Skills</a></p>
+        <p><a href="#contact">Contact</a></p>
+      </nav>
     </header>
     <main>
-      <h2>About Me</h2>
+      <div id="about">
+        <h2>About Me</h2>
 
-      <p>
-        <img src="Profile.jpg" width="400" alt="Profile Picture">
-      </p>
-      <div>
-        Hello! My name is Dominic Liotta. I am a Computer Science student at the
-        <strong><em>University of Washington</em></strong
-        >. I am a senior currently focusing on full-stack web development. Here
-        is a brief overview of my interests and goals.
-      </div>
-
-      <section>
-        <h2>Hobbies</h2>
         <p>
-          I am a man of many interests and hobbies. I have so many hobbies that
-          my wife often makes fun of me for it. <br>
-          Here are just a few of them:
+          <img src="Profile.jpg" width="400" alt="Profile Picture" />
         </p>
         <div>
+          Hello! My name is Dominic Liotta. I am a Computer Science student at
+          the
+          <strong><em>University of Washington</em></strong
+          >. I am a senior currently focusing on full-stack web development.
+          My background originally comes from construction and hands-on work, which has greatly influenced my 
+          problem-solving skills and attention to detail. Back in my construction days, I managed various projects and teams, 
+          ensuring that tasks were completed efficiently and to a high standard. I hope to bring the same level of dedication and attention to detail to my work in computer science.
+        </p>         
+      </div>
+      </div>
+
+      <section id="hobbies">
+        <h2>Hobbies</h2>
+        <p class="hobbies-description">
+          I am a man of many interests and hobbies. I have so many hobbies that
+          my wife often makes fun of me for it. I love things that are creative and allow me to express myself in different ways.
+        </p>
+        <div class="hobbies-list">
           <ul>
             <li>
               Cooking (click <a href="recipe.html"><u>here</u></a> for my
@@ -53,7 +66,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="goals">
         <h2>Goals</h2>
         <p>
           When I was younger, I always wanted to create and build things. This
@@ -64,22 +77,52 @@
         </p>
       </section>
 
-      <section>
+      <section id="skills">
         <h2>Skills</h2>
-        <p>
-          I have experience with various programming languages and technologies,
-          including Python, Java, C++, and PostgreSQL. I have done a little bit
-          of work with web development as well (though very limited).
-        </p>
+
+        <div id="skills-container">
+          <p id="skills-description">
+            I have experience with various programming languages and
+            technologies, including Python, Java, C++, and PostgreSQL. I have
+            done a little bit of work with web development as well (though very
+            limited).
+          </p>
+          
+            <div id="technology-skills">
+              <h3>Technology Skills</h3>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C++</li>
+                <li>PostgreSQL</li>
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div id="soft-skills">
+              <h3>Soft Skills</h3>
+              <ul>
+                <li>Problem Solving</li>
+                <li>Team Collaboration</li>
+                <li>Project Management</li>
+                <li>Communication</li>
+                <li>Customer Service</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section>
+      <section id="contact">
         <h2>Contact</h2>
         <address>
-          <p>
-            You can reach me via email at
-            <a href="mailto:dliotta@uw.edu">dliotta@uw.edu</a>.
-          </p>
+          <p>You can reach me via email at</p>
+          <aside id="contact-info">
+            <a href="mailto:dliotta@uw.edu">dliotta@uw.edu</a>
+            <a href="tel:+11234567890">(123) 456-7890</a>
+            <a href="https://www.linkedin.com/in/dominicjliotta">LinkedIn</a>
+            <a href="https://github.com/dominicjliotta">GitHub</a>
+          </aside>
         </address>
       </section>
     </main>
